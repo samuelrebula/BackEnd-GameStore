@@ -1,0 +1,29 @@
+GET http://localhost:5129/games
+
+###
+GET http://localhost:5129/games/3
+
+###
+POST http://localhost:5129/games
+Content-Type: application/json
+
+{
+    "name": "Baldur's Gate III",
+    "genreId": "1",
+    "price": 59.99,
+    "releaseDate": "2023-08-03"
+}
+
+###
+PUT http://localhost:5129/games/3
+Content-Type: application/json
+
+{
+    "name": "Baldur's Gate 3 Beta Version",
+    "genreId": 1,
+    "price": 9.99,
+    "releaseDate": "2023-08-03"
+}
+
+###
+DELETE http://localhost:5129/games/2
